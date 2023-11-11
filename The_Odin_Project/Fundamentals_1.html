@@ -1,14 +1,49 @@
 <!DOCTYPE html>
-<script src="javascript.js"></script>
+<!--<script src="javascript.js"></script>-->
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Page Title</title>
-  </head>
-  <body>
-    <script>
-      // Your JavaScript goes here!
-      console.log("Hello, World!");
-    </script>
-  </body>
+<body>
+<h2>JavaScript Numbers</h2>
+<title>Fundamentals 1</title>
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demoBase"></p>
+<h2>Assignment</h2>
+
+<script>
+  let p = NaN; //0xFF - number
+  let r = "test";
+  document.getElementById("demo").innerHTML = typeof p;
+  document.getElementById("demo2").innerHTML = typeof r;
+  document.getElementById("demoBase").innerHTML = typeof r;
+  console.log("Hello, World!");
+
+  let myNumber = 32;
+  document.getElementById("demoBase").innerHTML =
+    "Decimal 32 = " + "<br><br>" +
+
+    "Hexatrigesimal (base 36): " + myNumber.toString(36) + "<br>" +
+    "Duotrigesimal (base 32): " + myNumber.toString(32) + "<br>" +
+    "Hexadecimal (base 16): " + myNumber.toString(16) + "<br>" +
+    "Duodecimal (base 12): " + myNumber.toString(12) + "<br>" +
+    "Decimal (base 10): " + myNumber.toString(10) + "<br>" +
+    "Octal (base 8): " + myNumber.toString(8) + "<br>" +
+    "Binary (base 2): " + myNumber.toString(2);
+
+  //Assignment
+  console.log(23+97)
+  console.log(1+2+3+4+5+6)
+  console.log((4+6+9)/77)
+  let a = 10
+  console.log(a)
+  console.log(9*a)
+  let b = 7*a //Should return undefined but for some reason it works
+  console.log(b)
+
+  const MAX = 57
+  let actual = MAX - 13
+  let percentage = actual/MAX
+  console.log(percentage)
+
+</script>
+</body>
 </html>
