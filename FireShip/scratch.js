@@ -11,3 +11,6 @@ const animal = {
 
 const p1 = Object.getPrototypeOf(animal)
 console.log(p1)
+let a = 5;
+console.log(a**2);
+console.log(a);
