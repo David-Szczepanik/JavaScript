@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fundamentals 2</title>
+</head>
+<body>
+<button>Press me</button>
+<div id="greeting"></div>
+<script>
+  const button = document.querySelector("button");
+  function greet() {
+    const names = prompt("What is your name?");
+    const greeting = document.querySelector("#greeting");
+    greeting.textContent = `Hello ${names}, nice to see you!`;
+  }
+  button.addEventListener("click", greet);
+</script>
+</body>
+</html>
